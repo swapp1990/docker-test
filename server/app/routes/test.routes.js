@@ -10,7 +10,7 @@ module.exports = (app) => {
   });
 
   router.post("/login", async (req, res) => {
-    let payload = { uname: "swap", pwd: "1111" };
+    let payload = { uname: "swapp", pwd: "1111" };
     try {
       let res2 = await axios.post(
         "http://ec2-50-18-70-242.us-west-1.compute.amazonaws.com/core/user/login",
