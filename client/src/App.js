@@ -10,6 +10,14 @@ function App() {
       .catch((e) => {
         console.log(e);
       });
+
+    TestDataService.login()
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
   }, []);
   return <div>Hello Api</div>;
 }
